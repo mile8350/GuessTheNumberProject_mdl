@@ -1,15 +1,15 @@
 body {
     padding: 3em;
-    background-color: darkgrey;
+    background-color: lightgray;
     text-align: center;
 }
 
 h1 {
-    color: crimson;
+    color: darkred;
 }
 
 h3 {
-    color: lightgray;
+    color: navy;
     font-family: 'Roboto', sans-serif;
 }
 
