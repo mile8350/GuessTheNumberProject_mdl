@@ -54,10 +54,17 @@ const createGuess = () => {
 
 function compGuess(reply) {
     /* 
-    *   The parameter "reply" will either be passing "lower", "correct", or "higher". This should be considered when evaluating th elogic and response.
+    *   The parameter "reply" will either be passing "lower", "correct", or "higher". This should be considered when evaluating the logic and response.
 
     This should return a string indicating the computers response.
     */
-
+switch (reply) {
+    case 'lower':
+        return `Your number is lower? Is it ${currentNumber}?`;
+    case 'higher':
+        return `Your number is higher? Is it ${currentNumber}?`;
+    case 'correct':
+        return `I knew it! The number was ${currentNumber}!`;
+}
 }
 
