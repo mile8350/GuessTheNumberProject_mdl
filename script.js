@@ -38,13 +38,18 @@ randomNumber();
 
     You are not limited to just these functions. Feel free to create a new function that may be called to help manage the flow of your code.
 */
+let currentNumber = 1;
 
-function startCompGuess(num) {
+function startCompGuess(currentNumber) {
     // This should return a string that denotes the first guessed number
 
     // YOUR CODE ...
+    return `Is your number ${currentNumber}?`;
+}
 
-
+const createGuess = () => {
+    currentNumber = Math.floor(Math.random() * 100) + 1;
+    return currentNumber
 }
 
 function compGuess(reply) {
